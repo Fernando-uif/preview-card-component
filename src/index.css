@@ -350,8 +350,11 @@ template {
   display: none;
 }
 body {
-  padding: 12px;
   box-sizing: border-box;
   min-height: 100vh;
   font-family: "Space Grotesk", sans-serif;
+  background-color: #0a0c1c;
+}
+p {
+  margin: unset;
 }

@@ -1,0 +1,166 @@
+@import '../variables.scss';
+
+.app {
+    padding: 88px 24px;
+
+    @media screen and (min-width:465px) {
+        max-width: 465px;
+        margin: 0 auto;
+    }
+
+    @media screen and (min-width:1440px) {
+        display: flex;
+        padding: 177px 165px;
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+
+    &__wrapperImage {
+        width: 100%;
+        height: 100%;
+        background-color: #AB5CDB;
+        aspect-ratio: 4 / 3;
+        border-radius: 8px 8px 0 0;
+
+        @media screen and (min-width:1440px) {
+            order: 2;
+
+
+            aspect-ratio: 1 / 1;
+        }
+    }
+
+    &__image {
+        width: 100%;
+        aspect-ratio: 4 / 3;
+        mix-blend-mode: multiply;
+        height: 100%;
+        display: block;
+        border-radius: 8px 8px 0 0;
+
+        @media screen and (min-width:1440px) {
+            aspect-ratio: 1 / 1;
+
+
+        }
+    }
+
+    &__wrapperInformation {
+        background-color: #1B1937;
+        padding: 32px;
+        border-radius: 0 0 8px 8px;
+
+        @media screen and (min-width:1440px) {
+
+            order: 1px;
+            padding: 71px 95px 59px 71px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+
+        &__desktopInfo {
+            @media screen and (min-width:1440px) {
+                display: flex;
+                flex-direction: column;
+                gap: 25px;
+            }
+        }
+    }
+
+    &__mainDescription {
+        text-align: center;
+        color: $light;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        margin-bottom: 16px;
+
+        @media screen and (min-width:1440px) {
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 44px;
+            text-align: left;
+            margin: unset;
+        }
+
+        &--text {
+            color: $primary-color;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 32px;
+
+            @media screen and (min-width:1440px) {
+                font-size: 36px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 44px;
+            }
+        }
+
+        &__description {
+            text-align: center;
+            color: $light;
+            opacity: .75;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 25px;
+            margin-bottom: 40px;
+
+            @media screen and (min-width:1440px) {
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25px;
+                text-align: left;
+                margin-bottom: unset;
+            }
+        }
+
+        &__results {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 24px;
+
+            @media screen and (min-width:1440px) {
+                flex-direction: row;
+                gap: 64px;
+                justify-content: space-between;
+            }
+
+            &--number {
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                color: $light;
+                display: block;
+                text-align: center;
+
+            }
+
+            &--name {
+                color: $light;
+                text-align: center;
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 25px;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+                display: block;
+            }
+
+            &__wrapperInfo {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
